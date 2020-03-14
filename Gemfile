@@ -14,6 +14,9 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'webmock'
   gem "simplecov"
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rails', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
