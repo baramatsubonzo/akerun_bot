@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# AkerunApiとHTTPプロトコルでの通信を行う責務
 class AkerunApiClient < HTTPClient
   AKERUN_BASE_URI = "https://api.akerun.com/v3/organizations/#{ENV.fetch('ORGANIZATION_ID')}"
 
