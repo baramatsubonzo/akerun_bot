@@ -8,11 +8,11 @@ class AkerunUnlockRequestsController < ApplicationController
   private
     def reject_no_authorized_clients
       # RFC: 今回Slack推奨のsigning secretの利用で動作確認できず、非推奨であるがverification tokenを利用。
-      render status: 404 if confirm_not_slack_token
+      render status: 401 if confirm_not_slack_token
     end
 
     def confirm_not_slack_token
       # TODO: Env.fetch('SLACK_TOKEN')へ変更する。
-      request.params['token'] != 'hogehoge'
+      request.params['token'] != ENV.fetch('SLACK_TOKEN')
     end
 end
