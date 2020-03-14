@@ -13,6 +13,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-byebug'
   gem 'webmock'
+  gem "simplecov"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
