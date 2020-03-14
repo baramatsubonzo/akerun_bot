@@ -6,8 +6,12 @@ ruby '2.6.5'
 gem 'rails', '~> 6.0.0'
 gem 'pg'
 gem 'puma'
+gem 'httpclient'
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'pry-byebug'
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
