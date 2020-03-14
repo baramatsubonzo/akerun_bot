@@ -7,6 +7,7 @@ gem 'rails', '~> 6.0.0'
 gem 'pg'
 gem 'puma'
 gem 'httpclient'
+gem 'listen'
 
 group :development, :test do
   gem 'rspec-rails'
